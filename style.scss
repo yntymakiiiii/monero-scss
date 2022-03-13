@@ -1,0 +1,906 @@
+@import "reset";
+@import "vairiables";
+
+body {
+  @extend %bgbodyColor;
+}
+
+.container {
+  min-width: 1440px;
+
+}
+
+#header {
+  .header {
+    &__logo {
+      position: absolute;
+      margin-top: 30px;
+      margin-left: 30px;
+    }
+
+    &__title {
+      width: 150px;
+      height: 69px;
+      position: absolute;
+      margin-top: 173px;
+      margin-left: 190px;
+      font-family: CenturyGothic, sans-serif;
+      font-size: 56px;
+      line-height: 66px;
+    }
+
+    &__subtitle {
+      width: 370px;
+      height: 67px;
+      font-family: Inter, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 56px;
+      line-height: 68px;
+      position: absolute;
+      margin-top: 221px;
+      margin-left: 190px;
+    }
+
+    &__p {
+      width: 370px;
+      height: 144px;
+      position: absolute;
+      margin-top: 311px;
+      margin-left: 190px;
+      line-height: 35px;
+      font-family: Inter, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 22px;
+    }
+
+    &__btn {
+      position: absolute;
+      width: 239px;
+      margin-top: 500px;
+      display: flex;
+      text-align: center;
+      color: white;
+      margin-left: 215px;
+      padding: 15px 25px;
+      background: linear-gradient(315deg, rgba(255, 255, 255, 0.01) 0%, rgba(0, 0, 0, 0.01) 100%), #FA6800;
+      box-shadow: 0 15px 50px;
+      border-radius: 30px;
+    }
+
+    &__right {
+      position: absolute;
+      top: 10px;
+      left: 223px;
+    }
+
+    &__menu {
+      position: absolute;
+      margin-top: 635px;
+      margin-left: 190px;
+      width: 100px;
+      height: 160px;
+      line-height: 40px;
+      font-family: Inter, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    &__menu1 {
+      position: absolute;
+      margin-top: 635px;
+      margin-left: 370px;
+      width: 80px;
+      height: 160px;
+      line-height: 40px;
+      font-family: Inter, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    &__monero {
+      position: absolute;
+      left: 53%;
+      top: 100px;
+    }
+  }
+}
+
+#hero {
+  @extend %block-item;
+  position: absolute;
+  top: 990px;
+
+  .hero {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__title {
+
+      width: 690px;
+      height: 86px;
+      color: #FFFFFF;
+      position: absolute;
+      top: 100px;
+      left: 190px;
+      font-family: Inter, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 80px;
+      line-height: 97px;
+      letter-spacing: -3.33333px;
+    }
+
+    &__subtitle {
+      position: absolute;
+      top: 216px;
+      left: 190px;
+      width: 690px;
+      height: 109px;
+      font-family: Inter, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 22px;
+      line-height: 35px;
+      letter-spacing: -0.458333px;
+      color: #FFFFFF;
+
+    }
+
+    &__block {
+      display: flex;
+      flex-wrap: wrap;
+      &__1 {
+        @extend %block;
+        position: absolute;
+        top: 391px;
+        left: 190px;
+
+        &__group {
+          position: absolute;
+          top: 35px;
+          left: 85px;
+        }
+
+        &__title {
+          position: absolute;
+          top: 371px;
+          left: 40px;
+          width: 390px;
+          height: 64px;
+          font-family: Inter, sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 27px;
+          line-height: 33px;
+          color: #FFFFFF;
+        }
+
+        &__subtitle {
+          position: absolute;
+          left: 40px;
+          top: 445px;
+          font-family: Inter, sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 27px;
+          color: #FFFFFF;
+        }
+      }
+
+      &__2 {
+        @extend %block;
+        position: absolute;
+        top: 391px;
+        left: 770px;
+
+        &__group1 {
+          width: 292px;
+          height: 48px;
+          position: absolute;
+          margin-top: 201px;
+          margin-left: 89px;
+        }
+
+        &__title {
+          position: absolute;
+          top: 371px;
+          left: 40px;
+          width: 390px;
+          height: 64px;
+          font-family: Inter, sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 27px;
+          line-height: 33px;
+          color: #FFFFFF;
+        }
+
+        &__subtitle {
+          position: absolute;
+          left: 40px;
+          top: 445px;
+          font-family: Inter, sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 27px;
+          color: #FFFFFF;
+        }
+      }
+
+      &__3 {
+        @extend %block;
+        position: absolute;
+        top: 1094px;
+        left: 190px;
+
+        &__group2 {
+
+          position: absolute;
+          top: 46px;
+          left: 55px;
+        }
+
+        &__title {
+          position: absolute;
+          top: 371px;
+          left: 40px;
+          width: 390px;
+          height: 64px;
+          font-family: Inter, sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 27px;
+          line-height: 33px;
+          color: #FFFFFF;
+        }
+
+        &__subtitle {
+          position: absolute;
+          left: 40px;
+          top: 445px;
+          font-family: Inter, sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 27px;
+          color: #FFFFFF;
+        }
+      }
+
+      &__4 {
+        @extend %block;
+        position: absolute;
+        top: 1094px;
+        left: 770px;
+
+        &__group3 {
+          position: absolute;
+          margin-top: 125px;
+          margin-left: 130px;
+        }
+
+        &__title {
+          position: absolute;
+          top: 371px;
+          left: 40px;
+          width: 390px;
+          height: 64px;
+          font-family: Inter, sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 27px;
+          line-height: 33px;
+          color: #FFFFFF;
+        }
+
+        &__subtitle {
+          position: absolute;
+          left: 40px;
+          top: 445px;
+          font-family: Inter, sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 27px;
+          color: #FFFFFF;
+        }
+      }
+
+    }
+
+
+  }
+
+}
+
+#casual {
+  position: absolute;
+  top: 2755px;
+
+  .casual {
+    &__title {
+      position: absolute;
+      top: 100px;
+      left: 190px;
+
+      @extend %title-serif;
+
+
+    }
+
+    &__subtitle {
+      position: absolute;
+      top: 246px;
+      left: 190px;
+
+      @extend %subtitle-serif;
+
+    }
+
+    &__title1 {
+      position: absolute;
+      top: 246px;
+      left: 550px;
+      width: 330px;
+      height: 64px;
+      font-family: Inter, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 27px;
+      line-height: 33px;
+
+      color: #000000;
+    }
+
+    &__subtitle1 {
+      position: absolute;
+      top: 330px;
+      left: 550px;
+      width: 300px;
+      height: 135px;
+      @extend %subtitle-serif;
+
+
+    }
+
+    &__title2 {
+      position: absolute;
+      top: 246px;
+      left: 910px;
+      width: 330px;
+      height: 32px;
+      font-family: Inter, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 27px;
+      line-height: 33px;
+
+      color: #000000;
+    }
+
+    &__subtitle2 {
+      position: absolute;
+      top: 298px;
+      left: 910px;
+      width: 300px;
+      height: 135px;
+      @extend %subtitle-serif;
+
+
+    }
+
+    &__title3 {
+      position: absolute;
+      top: 515px;
+      left: 550px;
+      width: 330px;
+      height: 32px;
+      font-family: Inter, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 27px;
+      line-height: 33px;
+
+      color: #000000;
+    }
+
+    &__subtitle3 {
+      position: absolute;
+      top: 567px;
+      left: 550px;
+      width: 300px;
+      height: 135px;
+      @extend %subtitle-serif;
+
+
+    }
+
+
+  }
+}
+
+#power {
+  position: absolute;
+  top: 3432px;
+
+  .power {
+    &__title {
+      position: absolute;
+      top: 100px;
+      left: 190px;
+      @extend %title-serif;
+
+    }
+
+    &__subtitle {
+      position: absolute;
+      top: 246px;
+      left: 190px;
+      width: 300px;
+      height: 135px;
+      font-family: Inter, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 22px;
+      line-height: 27px;
+      color: #000000;
+
+    }
+
+
+    &__subtitle1 {
+      position: absolute;
+      top: 246px;
+      left: 550px;
+      width: 300px;
+      height: 135px;
+      @extend %subtitle-serif;
+
+
+    }
+
+
+    &__subtitle2 {
+      position: absolute;
+      top: 246px;
+      left: 910px;
+      width: 300px;
+      height: 135px;
+      @extend %subtitle-serif;
+
+
+    }
+
+
+    &__subtitle3 {
+      position: absolute;
+      top: 386px;
+      left: 550px;
+      width: 300px;
+      height: 135px;
+      @extend %subtitle-serif;
+
+
+    }
+
+    &__subtitle4 {
+      position: absolute;
+      top: 386px;
+      left: 910px;
+      width: 300px;
+      height: 135px;
+      @extend %subtitle-serif;
+
+
+    }
+
+  }
+}
+
+#business {
+  position: absolute;
+  top: 3953px;
+
+  .business {
+    &__title {
+      position: absolute;
+      top: 100px;
+      left: 190px;
+      @extend %title-serif;
+
+    }
+
+    &__subtitle {
+      position: absolute;
+      top: 246px;
+      left: 190px;
+      width: 300px;
+      height: 135px;
+      font-family: Inter, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 22px;
+      line-height: 27px;
+      color: #000000;
+
+    }
+
+
+    &__subtitle1 {
+      position: absolute;
+      top: 246px;
+      left: 550px;
+      width: 300px;
+      height: 135px;
+      @extend %subtitle-serif;
+
+
+    }
+
+
+    &__subtitle2 {
+      position: absolute;
+      top: 246px;
+      left: 910px;
+      width: 300px;
+      height: 135px;
+      @extend %subtitle-serif;
+
+    }
+
+
+    &__subtitle3 {
+      position: absolute;
+      top: 396px;
+      left: 550px;
+      width: 300px;
+      height: 135px;
+      @extend %subtitle-serif;
+
+    }
+
+    &__subtitle4 {
+      position: absolute;
+      top: 396px;
+      left: 910px;
+      width: 300px;
+      height: 135px;
+      @extend %subtitle-serif;
+
+
+    }
+
+  }
+}
+
+#privacy {
+  position: absolute;
+  top: 4534px;
+
+  .privacy {
+    &__title {
+      position: absolute;
+      top: 0;
+      left: 190px;
+      @extend %title-serif
+    }
+
+    &__img {
+      position: absolute;
+      top: 170px;
+      left: 190px;
+      @extend %block1;
+    }
+
+    &__team {
+      @extend %team__name;
+      position: absolute;
+      top: 320px;
+      left: 190px;
+    }
+
+    &__subtitle {
+      position: absolute;
+      top: 360px;
+      left: 190px;
+      width: 510px;
+      height: 81px;
+      @extend %subtitle-serif;
+
+    }
+
+    &__2 {
+      &__img {
+        position: absolute;
+        top: 500px;
+        left: 190px;
+        @extend %block1;
+      }
+
+      &__team {
+
+        position: absolute;
+        top: 650px;
+        left: 190px;
+        @extend %team__name;
+
+      }
+
+      &__subtitle {
+        position: absolute;
+        top: 700px;
+        left: 190px;
+        width: 510px;
+        height: 81px;
+        @extend %subtitle-serif;
+
+      }
+    }
+
+    &__3 {
+      position: relative;
+      top: 170px;
+      left: 790px;
+      width: 390px;
+      height: 120px;
+      background: rgb(0, 0, 0);
+      border-radius: 5px;
+
+      &__img {
+
+        position: absolute;
+        margin-left: -170px;
+        margin-top: 10px;
+        width: 470px;
+        height: 100px;
+      }
+
+      &__subtitle {
+        width: 510px;
+        height: 81px;
+        @extend %subtitle-serif;
+        position: absolute;
+        top: 190px;
+      }
+
+      &__team {
+        @extend %team__name;
+        position: absolute;
+        margin-top: 150px;
+        margin-left: 0;
+      }
+    }
+
+    &__4 {
+      &__img {
+        position: absolute;
+        top: 500px;
+        left: 790px;
+        @extend %block1;
+      }
+
+      &__team {
+
+        position: absolute;
+        top: 650px;
+        left: 790px;
+        @extend %team__name;
+
+      }
+
+      &__subtitle {
+        position: absolute;
+        top: 700px;
+        left: 790px;
+        width: 510px;
+        height: 81px;
+        @extend %subtitle-serif;
+
+      }
+    }
+  }
+}
+
+#choose {
+  position: absolute;
+  top: 5480px;
+  width: 100%;
+  height: 1307px;
+  background: rgba(32, 32, 32, 0.99);
+
+
+  .choose {
+    &__title {
+      position: absolute;
+      top: 100px;
+      left: 190px;
+      color: #FFFFFF;
+      @extend %title-serif;
+
+    }
+
+    &__subtitle {
+      position: absolute;
+      top: 216px;
+      left: 190px;
+      color: #FFFFFF;
+      width: 690px;
+      height: 54px;
+    }
+
+    &__img {
+      position: relative;
+      top: 399px;
+      left: 190px;
+    }
+
+    &__line {
+      position: absolute;
+      left: 50.88%;
+      right: 49.43%;
+      top: 22.29%;
+      bottom: 0;
+      border: 3px solid #FA6800;
+    }
+  }
+}
+
+#created {
+  position: absolute;
+  top: 6820px;
+
+  .created {
+    &__title {
+      position: absolute;
+      top: 100px;
+      left: 190px;
+      width: 1050px;
+      height: 160px;
+      font-family: 'Inter', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 80px;
+      line-height: 80px;
+      letter-spacing: -3px;
+      color: #000000;
+    }
+
+    &__subtitle {
+      position: absolute;
+      top: 280px;
+      left: 190px;
+      width: 690px;
+      height: 54px;
+
+      font-family: 'Inter', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+      color: #808080;
+    }
+
+    &__title1 {
+      position: absolute;
+      top: 409px;
+      left: 190px;
+      @extend %team__name;
+    }
+
+    &__subtitle1 {
+
+      position: absolute;
+      top: 449px;
+      left: 190px;
+      @extend %subtitle-serif;
+    }
+
+    &__title2 {
+      position: absolute;
+      top: 409px;
+      left: 700px;
+      @extend %team__name;
+    }
+
+    &__subtitle2 {
+      position: absolute;
+      top: 449px;
+      left: 700px;
+      @extend %subtitle-serif;
+    }
+
+    &__title3 {
+      position: absolute;
+      top: 629px;
+      left: 190px;
+      @extend %team__name;
+    }
+
+    &__subtitle3 {
+      position: absolute;
+      top: 669px;
+      left: 190px;
+      @extend %subtitle-serif;
+    }
+
+
+  }
+}
+
+#wallets {
+
+  position: absolute;
+  top: 7750px;
+  width: 100%;
+
+  .wallets {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 190px;
+
+    &__title {
+      position: absolute;
+      top: -120px;
+      @extend %title-serif;
+    }
+
+    &__title11 {
+      position: absolute;
+      top: 360px;
+      left: 190px;
+      @extend %team__name
+
+    }
+
+    &__subtitle11 {
+      position: absolute;
+      top: 399px;
+      left: 190px;
+      @extend %subtitle-serif
+    }
+
+    &__title22 {
+      position: absolute;
+      top: 360px;
+      left: 630px;
+      @extend %team__name
+
+    }
+
+    &__subtitle22 {
+      position: absolute;
+      top: 399px;
+      left: 630px;
+      @extend %subtitle-serif
+    }
+
+    &__title33 {
+      position: absolute;
+      top: 360px;
+      left: 1080px;
+      @extend %team__name
+    }
+
+    &__subtitle33 {
+      position: absolute;
+      top: 399px;
+      left: 1080px;
+      @extend %subtitle-serif
+    }
+
+  }
+}
+
+
+
+

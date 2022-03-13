@@ -1,0 +1,69 @@
+@media (max-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+
+    .header__monero {
+        width: 555px;
+        height: 650px;
+    }
+    .header {
+        width: 270px;
+        height: 47px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: 70%;
+    }
+
+    .header__monero {
+        width: 455px;
+        height: 550px;
+        left: 20px;
+    }
+
+    .header__subtitle {
+        width: 270px;
+        height: 47px;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .container{
+        width: 70%;
+    }
+    .hero{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .container{
+        width: 70%;
+    }
+    .hero__block{
+        width: 70%;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+
+}
+
+@media (max-width: 414px) {
+
+
+}
+
+
+@media (max-width: 320px) {
+
+
+}
