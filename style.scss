@@ -6,7 +6,8 @@ body {
 }
 
 .container {
-  min-width: 1440px;
+  width: 1440px;
+  margin: 0 auto;
 
 }
 
@@ -155,6 +156,7 @@ body {
     &__block {
       display: flex;
       flex-wrap: wrap;
+
       &__1 {
         @extend %block;
         position: absolute;
@@ -444,15 +446,7 @@ body {
       position: absolute;
       top: 246px;
       left: 190px;
-      width: 300px;
-      height: 135px;
-      font-family: Inter, sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 22px;
-      line-height: 27px;
-      color: #000000;
-
+     @extend %subtitle-serif
     }
 
 
@@ -522,14 +516,7 @@ body {
       position: absolute;
       top: 246px;
       left: 190px;
-      width: 300px;
-      height: 135px;
-      font-family: Inter, sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 22px;
-      line-height: 27px;
-      color: #000000;
+      @extend %subtitle-serif
 
     }
 
@@ -718,6 +705,9 @@ body {
 
 
   .choose {
+
+    position: relative;
+
     &__title {
       position: absolute;
       top: 100px;
@@ -744,11 +734,12 @@ body {
 
     &__line {
       position: absolute;
-      left: 50.88%;
+      left: 53.88%;
       right: 49.43%;
-      top: 22.29%;
+      top: 42.29%;
+      height: 900px;
       bottom: 0;
-      border: 3px solid #FA6800;
+      border: 2px solid #FA6800;
     }
   }
 }
@@ -757,18 +748,18 @@ body {
   position: absolute;
   top: 6820px;
 
-  .created {
+  .created{
     &__title {
       position: absolute;
       top: 100px;
       left: 190px;
-      width: 1050px;
-      height: 160px;
+      width: 67vw;
+      height: 89vw;
       font-family: 'Inter', sans-serif;
       font-style: normal;
       font-weight: 700;
-      font-size: 80px;
-      line-height: 80px;
+      font-size: 5vw;
+      line-height: 5vw;
       letter-spacing: -3px;
       color: #000000;
     }
@@ -777,60 +768,55 @@ body {
       position: absolute;
       top: 280px;
       left: 190px;
-      width: 690px;
-      height: 54px;
+      width: 76vw;
+      height: 45vw;
 
       font-family: 'Inter', sans-serif;
       font-style: normal;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 27px;
+      font-weight: bold;
+      font-size: 1.6vw;
+      line-height: 2.7vw;
       color: #808080;
     }
 
-    &__title1 {
-      position: absolute;
-      top: 409px;
-      left: 190px;
-      @extend %team__name;
+    &__block {
+      display: flex;
+flex-wrap: wrap;
+      margin-left: 190px;
+      &__btn {
+        margin-top: 35%;
+        width: 490px;
+        height: 0;
+        &__title {
+          width: 190px;
+          height: 32px;
+          font-family: Inter, sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 27px;
+          line-height: 33px;
+          color: #000000;
+
+
+        }
+
+        &__subtitle {
+
+          width: 330px;
+          height: 135px;
+          font-family: Inter, sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 27px;
+          color: #808080;
+        }
+
+
+      }
+
+
     }
-
-    &__subtitle1 {
-
-      position: absolute;
-      top: 449px;
-      left: 190px;
-      @extend %subtitle-serif;
-    }
-
-    &__title2 {
-      position: absolute;
-      top: 409px;
-      left: 700px;
-      @extend %team__name;
-    }
-
-    &__subtitle2 {
-      position: absolute;
-      top: 449px;
-      left: 700px;
-      @extend %subtitle-serif;
-    }
-
-    &__title3 {
-      position: absolute;
-      top: 629px;
-      left: 190px;
-      @extend %team__name;
-    }
-
-    &__subtitle3 {
-      position: absolute;
-      top: 669px;
-      left: 190px;
-      @extend %subtitle-serif;
-    }
-
 
   }
 }
@@ -850,54 +836,34 @@ body {
 
     &__title {
       position: absolute;
-      top: -120px;
+      top: 120px;
       @extend %title-serif;
     }
 
-    &__title11 {
-      position: absolute;
-      top: 360px;
-      left: 190px;
-      @extend %team__name
+    &__end {
+      display: flex;
+      justify-content: space-between;
+
+      &__block {
+        margin-bottom: 5%;
+        margin-top: 30%;
+
+        &__title {
+          @extend %team__name
+
+        }
+
+        &__subtitle {
+          position: absolute;
+          width: 330px;
+          height: 135px;
+
+          @extend %subtitle-serif
+        }
+      }
+
 
     }
-
-    &__subtitle11 {
-      position: absolute;
-      top: 399px;
-      left: 190px;
-      @extend %subtitle-serif
-    }
-
-    &__title22 {
-      position: absolute;
-      top: 360px;
-      left: 630px;
-      @extend %team__name
-
-    }
-
-    &__subtitle22 {
-      position: absolute;
-      top: 399px;
-      left: 630px;
-      @extend %subtitle-serif
-    }
-
-    &__title33 {
-      position: absolute;
-      top: 360px;
-      left: 1080px;
-      @extend %team__name
-    }
-
-    &__subtitle33 {
-      position: absolute;
-      top: 399px;
-      left: 1080px;
-      @extend %subtitle-serif
-    }
-
   }
 }
 
